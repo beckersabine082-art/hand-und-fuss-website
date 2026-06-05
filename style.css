@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: radial-gradient(circle at center, #0f4a38 0%, #062b20 72%);
+    color: #f5f0e6;
+}
+
+.navbar {
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 1.5px solid #c8a95b;
+    background: rgba(3, 32, 24, 0.75);
+}
+
+.navbar a {
+    color: #d7b866;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.hero {
+    min-height: 100vh;
+    text-align: center;
+    padding: 10px 20px 24px;
+}
+
+.logo {
+    width: 380px;
+    max-width: 65vw;
+    display: block;
+    margin: 0 auto 0;
+    filter: drop-shadow(0 0 6px rgba(216,188,106,0.25));
+}
+
+.ornament {
+    color: #d8bc6a;
+    max-width: 820px;
+    margin: -48px auto 10px;
+    border-top: 1px solid rgba(200, 169, 91, 0.45);
+    padding-top: 4px;
+    font-size: 0.8rem;
+}
+
+h1 {
+    color: #d8bc6a;
+    font-size: 1.3rem;
+    margin: 0 0 4px;
+}
+
+p {
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin: 0 0 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.card {
+    color: #f5f0e6;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 6px;
+}
+
+.card .icon {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card svg {
+    width: 28px;
+    height: 28px;
+    stroke: #d8bc6a;
+    stroke-width: 1.6;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.card:hover {
+    color: #fff3c4;
+    transform: translateY(-2px);
+}
+
+.card:hover {
+    background: rgba(200, 169, 91, 0.13);
+    color: #fff3c4;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        gap: 14px;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px;
+    }
+
+    .logo {
+        width: 280px;
+        max-width: 80vw;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.footer {
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.78rem;
+    color: #d8bc6a;
+}
+
+.footer a,
+.footer span {
+    color: #d8bc6a;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #f4df94;
+}
+.legal-page {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 30px;
+    color: #f5f0e6;
+    line-height: 1.6;
+}
+
+.legal-page h1,
+.legal-page h2 {
+    color: #d8bc6a;
+}
+
+.legal-page a {
+    color: #d8bc6a;
+}
