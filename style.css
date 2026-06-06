@@ -65,11 +65,12 @@ p {
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
-    max-width: 750px;
-    margin: 40px auto 0 auto;;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .card {
