@@ -206,12 +206,11 @@ p {
         max-width: 80vw;
     }
 
-   .cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 26px 18px;
-    max-width: 100%;
-    margin: 48px auto 0 auto;
-}
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 26px 18px;
+        max-width: 100%;
+        margin: 48px auto 0 auto;
     }
 
     .service-block {
@@ -221,61 +220,4 @@ p {
     .price-row {
         max-width: 100%;
     }
-.start-popup {
-    position: fixed;
-    inset: 0;
-    background: rgba(3, 32, 24, 0.55);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 90px;
-    z-index: 99999;
-}
-
-.start-popup.hide {
-    display: none;
-}
-
-.start-popup-frame {
-    position: relative;
-    width: min(90vw, 700px);
-    padding: 24px 42px;
-    text-align: center;
-    background: linear-gradient(135deg, #b98a2f, #f5d77b, #b98a2f);
-    color: #062b20;
-    border: 2px solid #fff0b5;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.45);
-}
-
-.popup-small {
-    color: #062b20;
-    font-size: 1.05rem;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin: 0 0 4px;
-    text-transform: uppercase;
-}
-
-.start-popup-frame h2 {
-    color: #062b20;
-    font-size: 2.1rem;
-    margin: 0 0 8px;
-}
-
-.start-popup-frame p {
-    color: #062b20;
-    font-size: 1.05rem;
-    line-height: 1.35;
-    margin: 0;
-}
-
-.close-popup {
-    position: absolute;
-    top: 6px;
-    right: 10px;
-    border: none;
-    background: transparent;
-    color: #062b20;
-    font-size: 1.8rem;
-    cursor: pointer;
 }
