@@ -98,33 +98,11 @@ p {
 }
 
 .card:hover {
+    background: rgba(200, 169, 91, 0.13);
     color: #fff3c4;
     transform: translateY(-2px);
 }
 
-.card:hover {
-    background: rgba(200, 169, 91, 0.13);
-    color: #fff3c4;
-}
-
-@media (max-width: 800px) {
-    .navbar {
-        gap: 14px;
-        font-size: 0.9rem;
-        flex-wrap: wrap;
-        height: auto;
-        padding: 12px;
-    }
-
-    .logo {
-        width: 280px;
-        max-width: 80vw;
-    }
-
-    .cards {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 .footer {
     position: fixed;
     bottom: 12px;
@@ -145,6 +123,7 @@ p {
 .footer a:hover {
     color: #f4df94;
 }
+
 .legal-page {
     max-width: 850px;
     margin: 60px auto;
@@ -161,16 +140,14 @@ p {
 .legal-page a {
     color: #d8bc6a;
 }
-.price-block hr {
-    border: none;
-    border-top: 1px solid #d4af37;
-    margin: 16px 0;
-    max-width: 320px;
+
+/* Angebot & Preise */
+
+.service-block {
+    max-width: 430px;
+    margin: 42px 0;
 }
 
-.main-price {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
 .service-title-row {
     display: flex;
     align-items: center;
@@ -179,9 +156,10 @@ p {
 }
 
 .service-icon-small {
-    width: 45px;
-    height: 45px;
+    width: 42px !important;
+    height: 42px !important;
     object-fit: contain;
+    margin: 0 !important;
 }
 
 .service-title-row h2 {
@@ -191,8 +169,8 @@ p {
 .price-row {
     display: flex;
     justify-content: space-between;
-    max-width: 320px;
-    margin-bottom: 6px;
+    max-width: 340px;
+    margin-bottom: 7px;
 }
 
 .main-service {
@@ -200,7 +178,7 @@ p {
 }
 
 .gold-line {
-    width: 180px;
+    width: 210px;
     height: 1px;
     background-color: #d4af37;
     margin: 10px 0;
@@ -209,4 +187,33 @@ p {
 .addon-title {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* Mobile Ansicht */
+
+@media (max-width: 800px) {
+    .navbar {
+        gap: 14px;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px;
+    }
+
+    .logo {
+        width: 280px;
+        max-width: 80vw;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-block {
+        max-width: 100%;
+    }
+
+    .price-row {
+        max-width: 100%;
+    }
 }
