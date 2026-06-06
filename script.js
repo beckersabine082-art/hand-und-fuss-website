@@ -1,11 +1,18 @@
-const startBanner = document.getElementById("start-banner");
+const startPopup = document.getElementById("start-popup");
+const closePopup = document.getElementById("close-popup");
 
-if (startBanner) {
-    startBanner.addEventListener("click", () => {
-        startBanner.classList.add("hide");
+if (startPopup && closePopup) {
+    closePopup.addEventListener("click", () => {
+        startPopup.classList.add("hide");
+    });
+
+    startPopup.addEventListener("click", (event) => {
+        if (event.target === startPopup) {
+            startPopup.classList.add("hide");
+        }
     });
 
     window.addEventListener("scroll", () => {
-        startBanner.classList.add("hide");
+        startPopup.classList.add("hide");
     }, { once: true });
 }
