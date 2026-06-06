@@ -171,44 +171,39 @@ p {
 .main-price {
     font-size: 1.2rem;
     margin-bottom: 10px;
-}
-.price-row {
+.service-title-row {
     display: flex;
-    justify-content: space-between;
-    max-width: 350px;
-    margin-bottom: 8px;
-}
-
-.gold-line {
-    width: 220px;
-    height: 1px;
-    background: #d4af37;
-    margin: 12px 0;
-}
-
-.addon-title {
+    align-items: center;
+    gap: 12px;
     margin-bottom: 10px;
-    font-weight: bold;
 }
-.service-icon {
-    width: 90px;
-    height: 90px;
+
+.service-icon-small {
+    width: 45px;
+    height: 45px;
     object-fit: contain;
-    margin-bottom: 10px;
+}
+
+.service-title-row h2 {
+    margin: 0;
 }
 
 .price-row {
     display: flex;
     justify-content: space-between;
-    max-width: 350px;
+    max-width: 320px;
     margin-bottom: 6px;
 }
 
+.main-service {
+    font-size: 1.1rem;
+}
+
 .gold-line {
-    width: 220px;
+    width: 180px;
     height: 1px;
     background-color: #d4af37;
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
 .addon-title {
