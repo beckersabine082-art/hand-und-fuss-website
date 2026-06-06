@@ -11,17 +11,63 @@
 
 <body>
 
-<div id="start-popup" class="start-popup">
-    <div class="start-popup-frame">
-        <button id="close-popup" class="close-popup">×</button>
+<div id="start-popup" style="
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 32, 24, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    z-index: 99999;
+">
+    <div style="
+        position: relative;
+        width: min(90vw, 720px);
+        padding: 24px 42px;
+        background: linear-gradient(135deg, #b98a2f, #f5d77b, #b98a2f);
+        color: #062b20;
+        text-align: center;
+        border: 2px solid #fff0b5;
+        box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+        font-family: 'Playfair Display', serif;
+    ">
+        <button onclick="document.getElementById('start-popup').style.display='none'" style="
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            border: none;
+            background: transparent;
+            color: #062b20;
+            font-size: 1.8rem;
+            cursor: pointer;
+        ">×</button>
 
-        <p class="popup-small">AB AUGUST 2026</p>
-        <h2>Für Sie da!</h2>
-        <p>
-            Hand & Fuß by J.F. Kennedy begrüßt Sie ab August
-            im Solara Sonnenstudio in Heusenstamm.
-        </p>
+        <div style="
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        ">
+            AB AUGUST 2026
+        </div>
+
+        <div style="
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+        ">
+            Für Sie da!
+        </div>
+
+        <div style="
+            font-size: 1.1rem;
+            line-height: 1.35;
+        ">
+            Hand & Fuß by J.F. Kennedy begrüßt Sie ab August im Solara Sonnenstudio in Heusenstamm.
+        </div>
     </div>
+</div>
 </div>
 
 <main class="hero">
