@@ -173,12 +173,13 @@ p {
     margin-bottom: 7px;
 }
 
-.main-service {
-    font-size: 1.1rem;
+.main-service strong {
+    color: #d8bc6a;
+    font-size: 1.4rem;
 }
 
 .gold-line {
-    width: 210px;
+    width: 340px;
     height: 1px;
     background-color: #d4af37;
     margin: 10px 0;
