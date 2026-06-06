@@ -161,3 +161,14 @@ p {
 .legal-page a {
     color: #d8bc6a;
 }
+.price-block hr {
+    border: none;
+    border-top: 1px solid #d4af37;
+    margin: 16px 0;
+    max-width: 320px;
+}
+
+.main-price {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
