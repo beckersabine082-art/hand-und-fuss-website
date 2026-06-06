@@ -217,7 +217,38 @@ p {
     .price-row {
         max-width: 100%;
     }
-  <div id="start-banner" class="corner-banner">
-    <strong>AB 01. AUGUST 2026</strong><br>
-    neu für Sie im Solara Sonnenstudio
-</div>
+.corner-banner {
+    position: fixed;
+    top: 46px;
+    left: -92px;
+    width: 390px;
+    padding: 14px 10px;
+    background: linear-gradient(135deg, #a97825, #f7df8a, #b98a2f);
+    color: #062b20;
+    text-align: center;
+    transform: rotate(-35deg);
+    z-index: 9999;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+    border-top: 2px solid #fff0b5;
+    border-bottom: 2px solid #8a641f;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+}
+
+.corner-banner span {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.corner-banner strong {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.corner-banner.hide {
+    display: none;
+}
