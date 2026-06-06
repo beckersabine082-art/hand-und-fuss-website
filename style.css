@@ -11,9 +11,9 @@ body {
     font-family: 'Playfair Display', serif;
     background: radial-gradient(
         circle at center,
-        #4F6B39 0%,
-        #354A25 45%,
-        #1F3A1D 100%
+        #24533c 0%,
+        #123b2c 55%,
+        #08261c 100%
     );
     color: #f5f0e6;
 }
