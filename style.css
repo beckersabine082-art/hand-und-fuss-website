@@ -190,3 +190,28 @@ p {
     margin-bottom: 10px;
     font-weight: bold;
 }
+.service-icon {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 6px;
+}
+
+.gold-line {
+    width: 220px;
+    height: 1px;
+    background-color: #d4af37;
+    margin: 12px 0;
+}
+
+.addon-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
