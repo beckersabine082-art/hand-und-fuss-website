@@ -172,3 +172,21 @@ p {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 8px;
+}
+
+.gold-line {
+    width: 220px;
+    height: 1px;
+    background: #d4af37;
+    margin: 12px 0;
+}
+
+.addon-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
