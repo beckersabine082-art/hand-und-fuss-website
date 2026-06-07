@@ -9,9 +9,7 @@ html, body {
 
 body {
     font-family: 'Playfair Display', serif;
-    background:
-        radial-gradient(circle at 72% 34%, rgba(196, 160, 75, 0.22) 0%, rgba(196, 160, 75, 0.08) 18%, transparent 34%),
-        radial-gradient(circle at center, #31502f 0%, #18381f 48%, #071f14 100%);
+   background: radial-gradient(circle at center, #176247 0%, #0b3a2b 72%);
     color: #f5f0e6;
 }
 
