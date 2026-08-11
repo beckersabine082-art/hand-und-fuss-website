@@ -236,3 +236,16 @@ p {
     object-fit: contain;
     border-radius: 8px;
 }
+.instagram-icon {
+    width: 26px;
+    height: 26px;
+    fill: #d94f8a;
+    stroke: white;
+    stroke-width: 1.8;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
