@@ -323,13 +323,136 @@ p {
     font-size: 24px;
     font-weight: 600;
 }
+/* Kontaktseite */
 
-.insta-mini {
-    font-size: 22px;
-    line-height: 1;
-    color: #d9b047;
+.contact-box {
+    margin-top: 28px;
+    margin-bottom: 38px;
 }
 
+.contact-box h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.contact-line {
+    font-size: 24px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-line a {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contact-symbol {
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+/* Instagram-Icon */
+
+.instagram-logo {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    flex: 0 0 26px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    border-radius: 7px;
+
+    background:
+        radial-gradient(
+            circle at 30% 105%,
+            #ffd600 0%,
+            #ff7a00 28%,
+            #ff0169 52%,
+            #d300c5 72%,
+            #7638fa 100%
+        );
+}
+
+.instagram-logo::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+
+    width: 11px;
+    height: 11px;
+
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.instagram-logo::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    width: 4px;
+    height: 4px;
+
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+
+
+/* Weitere Kontaktbereiche */
+
+.contact-section {
+    margin-top: 36px;
+}
+
+.contact-section h2 {
+    margin-bottom: 12px;
+}
+
+.contact-section p {
+    margin-bottom: 18px;
+}
+
+.solara-contact-logo {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+
+/* Unterseiten-Navigation */
+
+.page-contact {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(218, 176, 71, 0.6);
+    text-align: center;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #d9b047;
+    border-radius: 6px;
+    color: #d9b047;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+
+.back-home:hover {
+    background: #d9b047;
+    color: #0b4b39;
+}
 
 /* Mobile Ansicht */
 
