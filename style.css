@@ -272,3 +272,55 @@ p {
         width: 100%;
     }
 }
+.page-contact {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(218, 176, 71, 0.6);
+    text-align: center;
+}
+
+.page-contact p {
+    margin-bottom: 12px;
+}
+
+.phone-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 22px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #d9b047;
+    text-decoration: none;
+}
+
+.phone-link:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #d9b047;
+    border-radius: 6px;
+    color: #d9b047;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.back-home:hover {
+    background: #d9b047;
+    color: #0b4b39;
+}
+.contact-box h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.contact-line {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.contact-line a {
+    font-size: 22px;
+}
