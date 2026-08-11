@@ -2,16 +2,20 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     min-height: 100%;
 }
 
 body {
     font-family: 'Playfair Display', serif;
-   background: radial-gradient(circle at center, #176247 0%, #0b3a2b 72%);
+    background: radial-gradient(circle at center, #176247 0%, #0b3a2b 72%);
     color: #f5f0e6;
 }
+
+
+/* Navigation */
 
 .navbar {
     height: 58px;
@@ -29,6 +33,9 @@ body {
     font-size: 1.05rem;
 }
 
+
+/* Startseite */
+
 .hero {
     min-height: 100vh;
     text-align: center;
@@ -39,8 +46,8 @@ body {
     width: 380px;
     max-width: 65vw;
     display: block;
-    margin: 0 auto 0;
-    filter: drop-shadow(0 0 6px rgba(216,188,106,0.25));
+    margin: 0 auto;
+    filter: drop-shadow(0 0 6px rgba(216, 188, 106, 0.25));
 }
 
 .ornament {
@@ -64,12 +71,15 @@ p {
     margin: 0 0 40px;
 }
 
+
+/* Kacheln auf der Startseite */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 26px;
     max-width: 760px;
-    margin: 48px auto 0 auto;
+    margin: 48px auto 0;
 }
 
 .card {
@@ -80,6 +90,7 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.8px;
     padding: 6px;
+    transition: 0.2s ease;
 }
 
 .card .icon {
@@ -103,6 +114,9 @@ p {
     transform: translateY(-2px);
 }
 
+
+/* Footer */
+
 .footer {
     position: fixed;
     bottom: 12px;
@@ -124,6 +138,9 @@ p {
     color: #f4df94;
 }
 
+
+/* Allgemeine Unterseiten */
+
 .legal-page {
     max-width: 850px;
     margin: 60px auto;
@@ -140,6 +157,7 @@ p {
 .legal-page a {
     color: #d8bc6a;
 }
+
 
 /* Angebot & Preise */
 
@@ -190,37 +208,9 @@ p {
     margin-bottom: 10px;
 }
 
-/* Mobile Ansicht */
 
-@media (max-width: 800px) {
-    .navbar {
-        gap: 14px;
-        font-size: 0.9rem;
-        flex-wrap: wrap;
-        height: auto;
-        padding: 12px;
-    }
+/* Galerie */
 
-    .logo {
-        width: 280px;
-        max-width: 80vw;
-    }
-
-    .cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 26px 18px;
-        max-width: 100%;
-        margin: 48px auto 0 auto;
-    }
-
-    .service-block {
-        max-width: 100%;
-    }
-
-    .price-row {
-        max-width: 100%;
-    }
-}
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
@@ -236,6 +226,10 @@ p {
     object-fit: contain;
     border-radius: 8px;
 }
+
+
+/* Über mich */
+
 .about-me {
     display: flex;
     gap: 35px;
@@ -258,20 +252,9 @@ p {
     margin-top: 0;
 }
 
-@media (max-width: 700px) {
-    .about-me {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .about-photo {
-        width: 220px;
-    }
+/* Kontaktbereich auf Unterseiten */
 
-    .about-text {
-        width: 100%;
-    }
-}
 .page-contact {
     margin-top: 45px;
     padding-top: 25px;
@@ -297,6 +280,9 @@ p {
     text-decoration: underline;
 }
 
+
+/* Zurück-zur-Hauptseite-Button */
+
 .back-home {
     display: inline-block;
     padding: 10px 20px;
@@ -305,22 +291,113 @@ p {
     color: #d9b047;
     text-decoration: none;
     font-size: 17px;
+    transition: 0.2s ease;
 }
 
 .back-home:hover {
     background: #d9b047;
     color: #0b4b39;
 }
+
+
+/* Kontaktseite */
+
+.contact-box {
+    margin-top: 28px;
+}
+
 .contact-box h2 {
-    font-size: 30px;
-    margin-bottom: 18px;
+    font-size: 26px;
+    margin-bottom: 16px;
 }
 
 .contact-line {
-    font-size: 22px;
-    margin: 12px 0;
+    font-size: 24px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .contact-line a {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.insta-mini {
     font-size: 22px;
+    line-height: 1;
+    color: #d9b047;
+}
+
+
+/* Mobile Ansicht */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        gap: 14px;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px;
+    }
+
+    .logo {
+        width: 280px;
+        max-width: 80vw;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 26px 18px;
+        max-width: 100%;
+        margin: 48px auto 0;
+    }
+
+    .service-block {
+        max-width: 100%;
+    }
+
+    .price-row {
+        max-width: 100%;
+    }
+
+    .gold-line {
+        max-width: 100%;
+    }
+
+    .gallery-grid {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo {
+        width: 220px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .legal-page {
+        margin: 30px auto;
+        padding: 22px;
+    }
+
+    .contact-line {
+        font-size: 21px;
+    }
+
+    .contact-line a {
+        font-size: 21px;
+    }
 }
