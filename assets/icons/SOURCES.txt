@@ -1,0 +1,4 @@
+Das Instagram-SVG in kontakt.html stammt unverändert (Pfad und viewBox) aus Font Awesome Free 6.7.2 von Fonticons, Inc.
+https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.7.2/svgs/brands/instagram.svg
+Lizenz für das SVG: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+Ergänzt wurden ausschließlich HTML-Attribute für Größe, Gestaltung und Barrierefreiheit.
